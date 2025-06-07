@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:clerk_flutter/clerk_flutter.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() async {
-  await dotenv.load(fileName: ".env");
-  runApp(ExampleApp(publishableKey: dotenv.env['CLERK_PUBLISHABLE_KEY']!));
+void main() {
+  const publishableKey =
+      'pk_test_Y2FyZWZ1bC1mZWxpbmUtNTQuY2xlcmsuYWNjb3VudHMuZGV2JA';
+  runApp(const ExampleApp(publishableKey: publishableKey));
 }
 
 /// Example App

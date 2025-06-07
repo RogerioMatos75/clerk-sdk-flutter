@@ -1,16 +1,27 @@
-# myapp
+# Autenticação com Clerk Flutter
 
-A new Flutter project.
+Este projeto demonstra como integrar a autenticação Clerk em um aplicativo Flutter.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- Autenticação de usuários usando Clerk.
+- Funcionalidade dinâmica de login e logout.
+- Página inicial exibida após autenticação bem-sucedida.
 
-A few resources to get you started if this is your first Flutter project:
+### Instruções de Configuração
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone o repositório.
+2. Certifique-se de ter o Flutter instalado.
+3. Execute `flutter pub get` para instalar as dependências.
+4. Execute o aplicativo usando `flutter run`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Pontos Principais
+
+- O widget `ClerkAuth` é usado para gerenciar a autenticação.
+- O widget `ClerkAuthentication` exibe a interface de login.
+- O widget `HomePage` é exibido após o login bem-sucedido.
+
+### Observações
+
+- A chave publicável do Clerk está codificada diretamente no arquivo `main.dart` para simplicidade.
+- Para produção, considere usar um método seguro para gerenciar chaves de API.
